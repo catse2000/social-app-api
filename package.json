@@ -1,0 +1,27 @@
+{
+  "name": "social-app-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.18",
+    "node": "^15.3.0",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catse2000/social-app-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catse2000/social-app-api/issues"
+  },
+  "homepage": "https://github.com/catse2000/social-app-api#readme"
+}

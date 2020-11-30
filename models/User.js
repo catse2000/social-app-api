@@ -18,7 +18,24 @@ const UserSchema = new Schema({
             message: '{VALUE} is not a valid email',
             isAsync: false
         }
-    }
+    },
+    thoughts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Thought'
+        }
+    ],
+    friends: []
+},
+{
+    toJSON: {
+        virtuals: true
+    },
+    id: false
+});
+
+UserSchema.virtual('friendCount').get(function() {
+    return this.friends.length;
 });
 
 // create the User model using UserSchema
